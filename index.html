@@ -24,29 +24,29 @@
             box-sizing: inherit;
         }
 
-        #wrapper {
+        #video-wrapper {
             position: fixed;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             display: flex;
-            align-items: center;
             justify-content: center;
-        }
-
-        #video-wrapper {
-            height: 100%;
+            align-items: center;
+            height: 100vh;
             width: 100%;
             background-color: red;
+        }
+
+        video {
+            height: 100% !important;
+            width: 100% !important;
         }
     </style>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="video-wrapper"></div>
-    </div>
+    <div id="video-wrapper"></div>
 </body>
 
 </html>
