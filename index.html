@@ -54,36 +54,6 @@
         <div id="video-wrapper">
         </div>
     </div>
-
-    <script>
-        async function start() {
-            const container = document.querySelector(".container")
-            const width = container.offsetWidth
-            const height = container.offsetHeight
-
-            const config = {
-                isDebug: false,
-                token: "650ca43309b8a46c1f9392bb:h8ORnIDz6iq1lt3zCEGFSfwe",
-                faceapiPath: "https://cdn.jsdelivr.net/gh/nextcodebr/liveness-sdk-web-sample/libs/",
-                livenessUrlBase: "https://api-homolog.nxcd.app",
-                livenessConfirmEndpoint: "/liveness/v6.0",
-                isShowPreview: false,
-                brightnessControl: 108,
-                luminanceControl: 23,
-                configEyesBoxHeight: 100,
-                boxMessageTextColor: "#f3f3f5",
-                boxMessageBackgroundColor: "#1e61dd",
-                width,
-                height,
-            };
-
-            const videoWrapper = document.getElementById("video-wrapper");
-            window.liveness = new Liveness(videoWrapper, config);
-            window.liveness.start();
-        }
-
-        start();
-    </script>
 </body>
 
 </html>
